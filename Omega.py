@@ -146,7 +146,7 @@ def Main():
         TokenGen(gen)
     if choice == "5":
         print()
-        Crédits = int(Write.Input("Crée par 𝙈𝙖𝙩𝙭𝙙#1337\nhttps://discord.gg/NUcdbT2S\nhttps://discord.gg/XqJvvEbB\net ajouts du gen + credits par Krm#1385\nhttps://discord.gg/5PMGxPsf", Colors.blue_to_cyan , interval=0.0025))
+        Crédits = int(Write.Input("Crée par matxd291\nhttps://discord.gg/NUcdbT2S\nhttps://discord.gg/XqJvvEbB\net ajouts du gen + credits par Krm#1385\nhttps://discord.gg/5PMGxPsf", Colors.blue_to_cyan , interval=0.0025))
         sleep(5)
         TokenGen(Crédits)
     
