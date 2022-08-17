@@ -8,7 +8,7 @@ import random
 import threading
 
 System.Size(140 , 40)
-System.Title("Ghost V1")
+System.Title("Omega Token V1")
 
 ghostface = f"""
 
@@ -49,10 +49,13 @@ Menu = """1 - Token Checker
 2 - Mass Token Checker
 3 - Token Informations
 4 - Token Generator
-5 - Crédits
+5 - Credits
 """
 
-
+Credits = """Create by matxd291 -> github.com/matxd291
+And Modified by Kuruskow01 -> github.com/Kuruskow01
+For Download the V2 -> cracked.io/Omega1337
+"""
 
 def TokenInfo(token):
 
@@ -116,14 +119,12 @@ def TokenGen(gen):
 
         result = open("resultat.txt", "a")
         result.write(resultat + "\n")
+
     print("C'est fini.\nLes tokens ce trouves dans resultat.txt")
     sleep(3)
     exit()
 
-
-
 def Main():
-    Anime.Fade(Center.Center(ghostface), Colors.blue_to_cyan, Colorate.Vertical , enter=True)
     print(Colorate.Horizontal(Colors.blue_to_cyan , Center.XCenter(ghost)))
     print(Colorate.Horizontal(Colors.blue_to_cyan  , Center.XCenter(Box.DoubleCube(Menu))))
     print()
@@ -142,15 +143,15 @@ def Main():
         TokenInfo(token2)
     if choice == "4":
         print()
-        gen = int(Write.Input("Combiens de token ->", Colors.blue_to_cyan , interval=0.0025))
+        gen = int(Write.Input("How many tokens you want -> ", Colors.blue_to_cyan , interval=0.0025))
         TokenGen(gen)
-    if choice == "5":
-        print()
-        Crédits = int(Write.Input("Crée par matxd291\nhttps://discord.gg/NUcdbT2S\nhttps://discord.gg/XqJvvEbB\net ajouts du gen + credits par Krm#1385\nhttps://discord.gg/5PMGxPsf", Colors.blue_to_cyan , interval=0.0025))
+    if choice == "5" :
+        System.Clear()
+        print(Colorate.Horizontal(Colors.blue_to_cyan , Center.XCenter(ghost)))
+        print(Colorate.Horizontal(Colors.blue_to_cyan  , Center.XCenter(Box.DoubleCube(Credits))))
         sleep(5)
-        TokenGen(Crédits)
+        Main()
     
-
-
+Anime.Fade(Center.Center(ghostface), Colors.blue_to_cyan, Colorate.Vertical , enter=True)
 
 Main()
